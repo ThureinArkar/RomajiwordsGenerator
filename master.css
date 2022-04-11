@@ -1,0 +1,119 @@
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+html,body
+{
+  display: grid;
+  height: 100%;
+  place-items:center;
+  text-align: center;
+  width: 100%;
+
+}
+body
+{
+  /* background: url(bg.png);
+  background-size: cover; */
+  background-color: #161623;
+  /* height: 100vh; width: 100vw; */
+
+}
+div.alert
+{
+  width: 200px;
+  height: 50px;
+  background: green;
+  line-height: 50px;
+  position: absolute;
+  /* right: 10px; */
+  top:10px;
+  color: #fff;
+  display: none;
+  right: 20px;
+}
+
+
+.container
+{
+  width: 70%;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 35px 25px;
+}
+.container .text
+{
+  font-size: 26px;
+  color: #ccc;
+  font-weight: 600;
+  line-height: 35px;
+}
+.container .input-data
+{
+  margin: 20px 5px 15px 5px;
+}
+.input-data .display
+{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.input-data .display input
+{
+  margin-top: -60px;
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  outline: none;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #333;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 50px;
+  color: #eee;
+  pointer-events: none;
+  user-select: none;
+  text-shadow: 0 0 10px aqua,
+  0 0 20px aqua,
+  0 0 40px aqua,
+  0 0 80px aqua,
+  0 0 120px aqua;
+}
+.display span
+{
+  position: absolute;
+  right: 15px;
+  color: grey;
+  font-size: 25px;
+  cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  display: none;
+}
+.input-data button
+{
+  height: 45px;
+  display: block;
+  width: 100%;
+  margin-top: 70px;
+  outline: none;
+  background: rgba(0,0,0,0.5);
+  border: 1px solid #444;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.input-data button:hover
+{
+  background: rgba(0,0,0,0.7);
+}
